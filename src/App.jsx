@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import About from "./pages/About/About";
-import Catering from "./pages/Catering/Catering";
-import Contact from "./pages/Contact/Contact";
+import About from "./pages/about/About";
+import Catering from "./pages/catering/Catering";
+import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
-import Locations from "./pages/Locations/Locations";
-import Menu from "./pages/Menu/Menu";
+import Locations from "./pages/locations/Locations";
+import Menu from "./pages/menu/Menu";
 import Navigation from "./pages/navigation/Navigation";
 
 import "./App.css";
