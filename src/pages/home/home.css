@@ -2,7 +2,8 @@
     width: 100%;
 } */
 
-.slider-container {
+.slider-container,
+.home-image-grid-container {
     width: 100%;
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
@@ -35,3 +36,34 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+.home-about-subtitle-header {
+  font-size: 3rem;
+}
+
+.home-about-line-break {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: rgb(173, 173, 173);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 35%;
+  align-self: center;
+  /* border-color: rgb(161 161 170 / var(--tw-text-opacity)); */
+}
+.home-about-line-break:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgb(173, 173, 173);    
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+/* .home-image-grid-container {
+  margin-left: auto;
+  margin-right: auto;
+} */
