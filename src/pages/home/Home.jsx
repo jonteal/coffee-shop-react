@@ -5,15 +5,18 @@ import CoffeeIcon from "../../assets/coffee-logo.jpg";
 
 // COMPONENTS
 import Slider from "../../components/slider/Slider";
+import TextSlider from "../../components/textSlider/TextSlider";
 import HomeImageGrid from "../../components/homeImageGrid/HomeImageGrid";
 import MenuDrinkTable from "../../components/menuDrinkTable/MenuDrinkTable";
 import HomeAboutInfoItem from "../../components/homeAboutInfoItem/HomeAboutInfoItem";
 import HomeInfoPictureGrid from "../../components/homeInfoPictureGrid/HomeInfoPictureGrid";
+import HomeContactForm from "../../components/homeContactForm/HomeContactForm";
 
 import "./home.css";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
+  const [reviews, setReviews] = useState([]);
   const getData = () => {
     fetch("/data.json", {
       headers: {
@@ -26,18 +29,20 @@ const Home = () => {
       })
       .then(function (myJson) {
         setTables(myJson.tables);
+        setReviews(myJson.reviews);
       });
   };
   useEffect(() => {
     getData();
   }, []);
 
-  console.log("tables: ", tables);
+  console.log("reviews: ", reviews);
   return (
     <div>
       <div className="slider-container">
         <Slider />
       </div>
+
       <div className="flex justify-center mt-5">
         <img src={CoffeeIcon} alt="" className="w-1/12" />
       </div>
@@ -85,6 +90,18 @@ const Home = () => {
           <div className="home-info-picture-grid-container">
             <HomeInfoPictureGrid />
           </div>
+
+          <div className="my-3 p-5 w-7/12">
+            <TextSlider reviews={reviews} />
+          </div>
+
+          <div className="home-contact-header-banner bg-slate-500 my-5 p-5">
+            <h3 className="text-5xl text-gray-100 font-serif italic">
+              Get in touch!
+            </h3>
+          </div>
+
+          <HomeContactForm />
         </div>
       </div>
     </div>

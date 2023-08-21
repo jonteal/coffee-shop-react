@@ -84,5 +84,23 @@
         }
       ]
     }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "The Chai Latte is my favorite! The barista is always so incredibly nice and always knows what I want when I walk in the door."
+    },
+    {
+      "id": 2,
+      "comment": "I love that I get to have my dog on the patio! This place is part of my daily routine!"
+    },
+    {
+      "id": 3,
+      "comment": "This place is right around the corner from my house, and I'm so thankful I discovered it. The teas are essential!"
+    },
+    {
+      "id": 4,
+      "comment": "I love the smoothies! The stawberry banana is amazing!"
+    }
   ]
 }
