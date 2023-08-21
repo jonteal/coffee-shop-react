@@ -102,5 +102,23 @@
       "id": 4,
       "comment": "I love the smoothies! The stawberry banana is amazing!"
     }
+  ],
+  "homeInfo": [
+    {
+      "id": 1,
+      "infoItem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut deleniti, fugiat dolor soluta dolore debitis eius doloremque at vero aperiam."
+    },
+    {
+      "id": 2,
+      "infoItem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut deleniti, fugiat dolor soluta dolore debitis eius doloremque at vero aperiam."
+    },
+    {
+      "id": 3,
+      "infoItem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut deleniti, fugiat dolor soluta dolore debitis eius doloremque at vero aperiam."
+    },
+    {
+      "id": 4,
+      "infoItem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut deleniti, fugiat dolor soluta dolore debitis eius doloremque at vero aperiam."
+    }
   ]
 }

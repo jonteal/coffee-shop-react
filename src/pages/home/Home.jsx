@@ -6,17 +6,18 @@ import CoffeeIcon from "../../assets/coffee-logo.jpg";
 // COMPONENTS
 import Slider from "../../components/slider/Slider";
 import TextSlider from "../../components/textSlider/TextSlider";
-import HomeImageGrid from "../../components/homeImageGrid/HomeImageGrid";
-import MenuDrinkTable from "../../components/menuDrinkTable/MenuDrinkTable";
-import HomeAboutInfoItem from "../../components/homeAboutInfoItem/HomeAboutInfoItem";
-import HomeInfoPictureGrid from "../../components/homeInfoPictureGrid/HomeInfoPictureGrid";
 import HomeContactForm from "../../components/homeContactForm/HomeContactForm";
+import HomeImageGrid from "../../components/homeImageGrid/HomeImageGrid";
+import HomeInfo from "../../components/homeInfo/HomeInfo";
+import HomeInfoPictureGrid from "../../components/homeInfoPictureGrid/HomeInfoPictureGrid";
+import MenuDrinkTable from "../../components/menuDrinkTable/MenuDrinkTable";
 
 import "./home.css";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const [homeInfo, setHomeInfo] = useState([]);
   const getData = () => {
     fetch("/data.json", {
       headers: {
@@ -30,13 +31,13 @@ const Home = () => {
       .then(function (myJson) {
         setTables(myJson.tables);
         setReviews(myJson.reviews);
+        setHomeInfo(myJson.homeInfo);
       });
   };
   useEffect(() => {
     getData();
   }, []);
 
-  console.log("reviews: ", reviews);
   return (
     <div>
       <div className="slider-container">
@@ -52,10 +53,7 @@ const Home = () => {
         </h1>
         <hr className="home-about-line-break" />
         <div className="flex flex-col items-center">
-          <HomeAboutInfoItem />
-          <HomeAboutInfoItem />
-          <HomeAboutInfoItem />
-          <HomeAboutInfoItem />
+          <HomeInfo homeInfo={homeInfo} />
 
           <Link to="/about">
             <div className="flex flex-row items-center">
@@ -70,13 +68,11 @@ const Home = () => {
             <HomeImageGrid />
           </div>
 
-          <div className="flex justify-center w-9/12 mt-5">
-            <MenuDrinkTable tableInfo={tables[0]} />
-          </div>
-
-          <div className="flex justify-center w-9/12 mt-5">
-            <MenuDrinkTable tableInfo={tables[1]} />
-          </div>
+          {tables.map((table) => (
+            <div key={table.id} className="flex justify-center w-9/12 mt-5">
+              <MenuDrinkTable tableInfo={table} />
+            </div>
+          ))}
 
           <Link to="/menu">
             <div className="flex flex-row items-center">

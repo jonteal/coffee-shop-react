@@ -3,7 +3,7 @@ import "./menuDrinkTable.css";
 
 const MenuDrinkTable = ({ tableInfo }) => {
   return (
-    <div className="flex flex-col px-5 menu-drink-table-container">
+    <div className="flex flex-col px-5 menu-drink-table-container my-3">
       <div className="coffee-table-container border mx-5 p-2">
         <h2 className="text-5xl text-zinc-600 text-opacity-60 mb-3 font-serif">
           {tableInfo?.category}
