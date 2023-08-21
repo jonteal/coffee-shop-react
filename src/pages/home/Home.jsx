@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
@@ -11,95 +12,27 @@ import HomeInfoPictureGrid from "../../components/homeInfoPictureGrid/HomeInfoPi
 
 import "./home.css";
 
-const tableInfo = [
-  {
-    id: 1,
-    category: "Coffee",
-    sizes: ["", "S", "M", "L"],
-    items: [
-      {
-        id: 1,
-        itemName: "Drip",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 2,
-        itemName: "Ethiopian",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 3,
-        itemName: "Cappucino",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 4,
-        itemName: "Breve",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 5,
-        itemName: "Latte",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 6,
-        itemName: "Mocha",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 7,
-        itemName: "Cold Brew",
-        prices: ["3", "4", "5"],
-      },
-    ],
-  },
-  {
-    id: 2,
-    category: "Tea",
-    sizes: ["", "S", "M", "L"],
-    items: [
-      {
-        id: 1,
-        itemName: "Honey Chai",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 2,
-        itemName: "Black Hibiscus",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 3,
-        itemName: "London Fog",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 4,
-        itemName: "Soft Touch",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 5,
-        itemName: "Matcha Latte",
-        prices: ["3", "4", "5"],
-      },
-      {
-        id: 6,
-        itemName: "Thai Tea",
-        prices: ["4", "5", "6"],
-      },
-      {
-        id: 7,
-        itemName: "Chai Tea Latte",
-        prices: ["3", "4", "5"],
-      },
-    ],
-  },
-];
-
 const Home = () => {
-  console.log("tableInfo: ", tableInfo);
+  const [tables, setTables] = useState([]);
+  const getData = () => {
+    fetch("/data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        setTables(myJson.tables);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log("tables: ", tables);
   return (
     <div>
       <div className="slider-container">
@@ -133,11 +66,11 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center w-9/12 mt-5">
-            <MenuDrinkTable tableInfo={tableInfo[0]} />
+            <MenuDrinkTable tableInfo={tables[0]} />
           </div>
 
           <div className="flex justify-center w-9/12 mt-5">
-            <MenuDrinkTable tableInfo={tableInfo[1]} />
+            <MenuDrinkTable tableInfo={tables[1]} />
           </div>
 
           <Link to="/menu">
