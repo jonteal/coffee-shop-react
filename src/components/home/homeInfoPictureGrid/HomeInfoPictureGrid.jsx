@@ -1,7 +1,7 @@
-import GridImage1 from "../../assets/images/gridImage1.jpg";
-import GridImage2 from "../../assets/images/gridImage2.jpg";
-import GridImage3 from "../../assets/images/gridImage3.jpg";
-import GridImage4 from "../../assets/images/gridImage4.jpg";
+import GridImage1 from "../../../assets/images/gridImage1.jpg";
+import GridImage2 from "../../../assets/images/gridImage2.jpg";
+import GridImage3 from "../../../assets/images/gridImage3.jpg";
+import GridImage4 from "../../../assets/images/gridImage4.jpg";
 
 import "./homeInfoPictureGrid.css";
 

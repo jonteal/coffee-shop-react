@@ -4,7 +4,7 @@ const MenuDrinkItem = ({ item }) => {
       <div className="flex justify-start text-lg text-zinc-600 text-opacity-60 w-1/4">
         {item.itemName}
       </div>
-      {item.prices.map((price) => (
+      {item?.prices.map((price) => (
         <div
           key={price}
           className="text-lg text-zinc-600 text-opacity-60 w-1/4"

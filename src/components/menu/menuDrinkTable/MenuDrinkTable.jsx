@@ -1,14 +1,15 @@
 import MenuDrinkItem from "../menuDrinkItem/MenuDrinkItem";
+
 import "./menuDrinkTable.css";
 
 const MenuDrinkTable = ({ tableInfo }) => {
   return (
-    <div className="flex flex-col px-5 menu-drink-table-container my-3">
-      <div className="coffee-table-container border mx-5 p-2">
+    <div className="flex flex-col px-5 menu-drink-table-container my-3 mx-3">
+      <div className="mx-2 p-2">
         <h2 className="text-5xl text-zinc-600 text-opacity-60 mb-3 font-serif">
           {tableInfo?.category}
         </h2>
-        <div className="coffee-table">
+        <div className="menu-drink-table">
           <div className="flex flex-row">
             {tableInfo?.sizes.map((size) => (
               <p

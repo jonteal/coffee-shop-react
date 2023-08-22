@@ -1,8 +1,8 @@
 import React from "react";
-import SliderImage1 from "../../assets/images/stock1.jpg";
-import SliderImage2 from "../../assets/images/stock2.jpg";
-import SliderImage3 from "../../assets/images/stock3.jpg";
-import SliderImage4 from "../../assets/images/stock4.jpg";
+import SliderImage1 from "../../../assets/images/stock1.jpg";
+import SliderImage2 from "../../../assets/images/stock2.jpg";
+import SliderImage3 from "../../../assets/images/stock3.jpg";
+import SliderImage4 from "../../../assets/images/stock4.jpg";
 
 import "./slider.css";
 

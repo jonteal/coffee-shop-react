@@ -2,10 +2,20 @@
     font-size: 16rem;
 }
 
-.coffee-table {
+.menu-drink-table,
+.speciality-table {
     width: 100%;
 }
 
-/* .table, th, td {
-    border:1px solid black;
-  } */
+.menu-table-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+  }
+  
+.menu-table-grid-item {
+    width: 100%;
+}
+
+

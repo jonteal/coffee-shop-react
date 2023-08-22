@@ -85,6 +85,64 @@
       ]
     }
   ],
+  "specialtyItems": [
+    {
+      "id": 1,
+      "category": "Smoothies",
+      "sizes": ["12 oz", "16 oz", "20 oz"],
+      "prices": ["5", "6", "7"],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "Berry Blast",
+          "ingredients": "Strawberry, Rasberry, Blueberry, Honey Greek Yogurt, Almond Milk"
+        },
+        {
+          "id": 2,
+          "itemName": "Orange Twist",
+          "ingredients": "Orange, Banana, Milk, Plain Greek yogurt, Vanilla extract, Honey Syrup"
+        },
+        {
+          "id": 3,
+          "itemName": "Strawberry Banana Classic",
+          "ingredients": "Strawberry, Banana"
+        },
+        {
+          "id": 4,
+          "itemName": "Peachy Pleasure",
+          "ingredients": "Peaches, Peach Chia Seeds, Honey Greek Yogurt, Orange Juice"
+        },
+        {
+          "id": 5,
+          "itemName": "Espresso Power Up",
+          "ingredients": "Dates, Espresso, Almonds, Nonfat Milk, Dairy Whey Blend, Whey Protein"
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "id": 1,
+      "category": "Eats",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "Blueberry Muffin",
+          "price": 3
+        },
+        {
+          "id": 2,
+          "itemName": "Applewood Bacon Biscuit",
+          "price": 4
+        },
+        {
+          "id": 3,
+          "itemName": "Scone",
+          "price": 3
+        }
+      ]
+    }
+  ],
   "reviews": [
     {
       "id": 1,

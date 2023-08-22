@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 
-import MenuDrinkTable from "../../components/menuDrinkTable/MenuDrinkTable";
+import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
+import MenuSpecialtyDrinks from "../../components/menu/menuSpecialtyDrinks/MenuSpecialtyDrinks";
+import MenuFoodTable from "../../components/menu/menuFoodTable/MenuFoodTable";
 
 import "./menu.css";
 
 const Menu = () => {
   const [tables, setTables] = useState([]);
+  const [specialtyItems, setSpecialtyItems] = useState([]);
+  const [foodTables, setFoodTables] = useState([]);
   const getData = () => {
     fetch("/data.json", {
       headers: {
@@ -18,6 +22,8 @@ const Menu = () => {
       })
       .then(function (myJson) {
         setTables(myJson.tables);
+        setSpecialtyItems(myJson.specialtyItems);
+        setFoodTables(myJson.food);
       });
   };
   useEffect(() => {
@@ -30,9 +36,23 @@ const Menu = () => {
         Menu
       </h1>
 
-      {tables.map((table) => (
-        <MenuDrinkTable key={table.id} tableInfo={table} />
-      ))}
+      <div className="menu-table-wrapper">
+        {tables.map((table) => (
+          <div className="menu-table-grid-item">
+            <MenuDrinkTable key={table.id} tableInfo={table} />
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-row">
+        {specialtyItems?.map((item) => (
+          <MenuSpecialtyDrinks key={item.id} tableInfo={item} />
+        ))}
+
+        {foodTables?.map((table) => (
+          <MenuFoodTable key={table.id} tableInfo={table} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -4,13 +4,13 @@ import { FaArrowRight } from "react-icons/fa";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
 
 // COMPONENTS
-import Slider from "../../components/slider/Slider";
-import TextSlider from "../../components/textSlider/TextSlider";
-import HomeContactForm from "../../components/homeContactForm/HomeContactForm";
-import HomeImageGrid from "../../components/homeImageGrid/HomeImageGrid";
-import HomeInfo from "../../components/homeInfo/HomeInfo";
-import HomeInfoPictureGrid from "../../components/homeInfoPictureGrid/HomeInfoPictureGrid";
-import MenuDrinkTable from "../../components/menuDrinkTable/MenuDrinkTable";
+import Slider from "../../components/sliders/slider/Slider";
+import TextSlider from "../../components/sliders/textSlider/TextSlider";
+import HomeContactForm from "../../components/home/homeContactForm/HomeContactForm";
+import HomeImageGrid from "../../components/home/homeImageGrid/HomeImageGrid";
+import HomeInfo from "../../components/home/homeInfo/HomeInfo";
+import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
+import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 
 import "./home.css";
 
