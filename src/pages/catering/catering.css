@@ -55,3 +55,28 @@
     filter: brightness(50%)
 }
 
+.secondary-section-container,
+.secondary-image-container {
+  height: 450px;
+  overflow: hidden;
+}
+
+.catering-secondary-image {
+  outline: 1px solid white;
+  outline-offset: -20px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.catering-secondary-image {
+  object-fit: cover;
+  filter: brightness(50%)
+}
+
+.catering-second-text-container {
+  z-index: 1;
+  position: absolute;
+  top: 185%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}

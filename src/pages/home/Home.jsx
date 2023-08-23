@@ -13,6 +13,7 @@ import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeI
 import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 
 import "./home.css";
+import { HomeImageSlider } from "../../components/sliders/homeImageSlider/HomeImageSlider";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
@@ -40,8 +41,11 @@ const Home = () => {
 
   return (
     <div>
-      <div className="slider-container">
+      {/* <div className="slider-container">
         <Slider />
+      </div> */}
+      <div className="slider-container">
+        <HomeImageSlider />
       </div>
 
       <div className="flex justify-center mt-5">
