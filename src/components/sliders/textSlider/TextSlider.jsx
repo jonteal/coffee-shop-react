@@ -1,55 +1,58 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./textSlider.css";
 
 const TextSlider = ({ reviews }) => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    centerMode: true,
+    speed: 3000,
+    autoplaySpeed: 4000,
+    arrows: true,
+    centerPadding: "100px",
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
-    <div
-      id="carouselExampleIndicators"
-      className="carousel slide review-carousel-inner-container p-5 bg-orange-300"
-      data-ride="carousel"
-    >
-      <ol className="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          className="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      </ol>
-      <div className="carousel-inner p-3">
-        <div className="carousel-item active">
-          <p className="break-normal">{reviews[0]?.comment}</p>
-        </div>
-        <div className="carousel-item">
-          <p className="break-normal">{reviews[1]?.comment}</p>
-        </div>
-        <div className="carousel-item">
-          <p className="break-normal">{reviews[2]?.comment}</p>
-        </div>
-        <div className="carousel-item">
-          <p className="break-normal">{reviews[3]?.comment}</p>
-        </div>
-      </div>
-      <a
-        className="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
-      </a>
-      <a
-        className="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
-      </a>
-    </div>
+    <Slider className="text-slider-container" {...settings}>
+      {reviews.map((review) => (
+        <p className="mx-20 border" key={review.id}>
+          {review.comment}
+        </p>
+      ))}
+    </Slider>
   );
 };
 

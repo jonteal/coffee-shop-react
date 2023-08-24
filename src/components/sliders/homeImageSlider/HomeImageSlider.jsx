@@ -17,6 +17,9 @@ export const HomeImageSlider = () => {
     autoplaySpeed: 3000,
     autoplay: true,
     centerMode: true,
+    speed: 3000,
+    autoplaySpeed: 4000,
+    arrows: true,
   };
   return (
     <div className="home-image-slider-container">

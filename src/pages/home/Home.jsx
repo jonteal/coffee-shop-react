@@ -8,12 +8,12 @@ import Slider from "../../components/sliders/slider/Slider";
 import TextSlider from "../../components/sliders/textSlider/TextSlider";
 import HomeContactForm from "../../components/home/homeContactForm/HomeContactForm";
 import HomeImageGrid from "../../components/home/homeImageGrid/HomeImageGrid";
+import { HomeImageSlider } from "../../components/sliders/homeImageSlider/HomeImageSlider";
 import HomeInfo from "../../components/home/homeInfo/HomeInfo";
 import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
 import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 
 import "./home.css";
-import { HomeImageSlider } from "../../components/sliders/homeImageSlider/HomeImageSlider";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
