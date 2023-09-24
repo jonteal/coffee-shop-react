@@ -12,8 +12,10 @@ import { HomeImageSlider } from "../../components/sliders/homeImageSlider/HomeIm
 import HomeInfo from "../../components/home/homeInfo/HomeInfo";
 import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
 import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
+import { BootstrapSlider } from "../../components/sliders/bootstrapSlider/BootstrapSlider";
 
 import "./home.css";
+import { MuiSlider } from "../../components/sliders/muiSlider/MuiSlider";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
@@ -45,7 +47,8 @@ const Home = () => {
         <Slider />
       </div> */}
       <div className="slider-container">
-        <HomeImageSlider />
+        {/* <BootstrapSlider /> */}
+        <MuiSlider />
       </div>
 
       <div className="flex justify-center mt-5">
