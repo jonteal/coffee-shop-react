@@ -4,7 +4,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer bg-slate-500 py-2 flex flex-row justify-center items-center">
+    <div className="footer bg-cyan-700 py-2 flex flex-row justify-center items-center">
       <a href="">
         <FaFacebook className="px-1 social-icon ml-3 mr-1" />
       </a>

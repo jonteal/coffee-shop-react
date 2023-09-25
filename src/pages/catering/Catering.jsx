@@ -4,7 +4,7 @@ import "./catering.css";
 
 const Catering = () => {
   return (
-    <>
+    <div className="flex flex-col items-center">
       <div className="container">
         <img
           src={MainImage}
@@ -21,7 +21,7 @@ const Catering = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mt-5 mx-4 secondary-section-container">
+      <div className="flex flex-row mt-5 mb-10 ml-20 secondary-section-container">
         <div className="bg-gray-800 w-5/12 flex flex-col justify-center mr-3">
           <p className="text-slate-50 mx-5 my-2 text-xl">
             Call 479-123-4567 or visit our contact page to place your order.
@@ -35,7 +35,7 @@ const Catering = () => {
             future catering needs!
           </p>
         </div>
-        <div className="w-7/12 ml-3 secondary-image-container">
+        <div className="w-7/12 secondary-image-container">
           <img
             className="catering-secondary-image"
             src={SecondaryImage}
@@ -51,7 +51,7 @@ const Catering = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

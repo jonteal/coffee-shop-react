@@ -21,7 +21,13 @@ export const MuiSlider = (props) => {
   ];
 
   return (
-    <Carousel animation="slide" duration={1500} interval={4000} swipe={true}>
+    <Carousel
+      className="h-screen"
+      animation="slide"
+      duration={1500}
+      interval={4000}
+      swipe={true}
+    >
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}

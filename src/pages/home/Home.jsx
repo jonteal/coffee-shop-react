@@ -16,6 +16,7 @@ import { BootstrapSlider } from "../../components/sliders/bootstrapSlider/Bootst
 
 import "./home.css";
 import { MuiSlider } from "../../components/sliders/muiSlider/MuiSlider";
+import { MuiTextSlider } from "../../components/sliders/muiTextSlider/MuiTextSlider";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
@@ -95,10 +96,10 @@ const Home = () => {
           </div>
 
           <div className="my-3 p-5 w-7/12">
-            <TextSlider reviews={reviews} />
+            <MuiTextSlider reviews={reviews} />
           </div>
 
-          <div className="home-contact-header-banner bg-slate-500 my-5 p-5">
+          <div className="home-contact-header-banner bg-cyan-700 my-5 p-5">
             <h3 className="text-5xl text-gray-100 font-serif italic">
               Get in touch!
             </h3>

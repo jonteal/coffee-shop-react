@@ -9,10 +9,7 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation-container">
-        <Link className="logo-container" to="/">
-          <img src={CoffeeIcon} className="logo" alt="Coffee Logo" />
-        </Link>
-        <div className="nav-links">
+        <div className="flex flex-row justify-center items-center mx-auto mb-3 mt-12">
           <Link className="nav-link" to="/">
             HOME
           </Link>
@@ -21,6 +18,9 @@ const Navigation = () => {
           </Link>
           <Link className="nav-link" to="menu">
             MENU
+          </Link>
+          <Link className="logo-container" to="/">
+            <img src={CoffeeIcon} className="logo w-28" alt="Coffee Logo" />
           </Link>
           <Link className="nav-link" to="catering">
             CATERING

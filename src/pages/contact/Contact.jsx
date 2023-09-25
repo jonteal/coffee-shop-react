@@ -42,7 +42,9 @@ const Contact = () => {
         <div className="contact-bg"></div>
         <div className="contact-wrapper">
           <div className="contact-left">
-            <h1 className="contact-title">We'd love to hear from you!</h1>
+            <h1 className="italic text-5xl font-serif">
+              We'd love to hear from you!
+            </h1>
 
             {/* Contact information */}
             <div className="contact-info">
