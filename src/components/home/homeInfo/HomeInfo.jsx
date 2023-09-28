@@ -1,6 +1,6 @@
-import HomeAboutInfoItem from "../homeAboutInfoItem/HomeAboutInfoItem";
+import { HomeAboutInfoItem } from "../homeAboutInfoItem/HomeAboutInfoItem";
 
-const HomeInfo = ({ homeInfo }) => {
+export const HomeInfo = ({ homeInfo }) => {
   return (
     <>
       {homeInfo.map((item) => (
@@ -9,5 +9,3 @@ const HomeInfo = ({ homeInfo }) => {
     </>
   );
 };
-
-export default HomeInfo;

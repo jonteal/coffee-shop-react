@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
+import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 import MenuSpecialtyDrinks from "../../components/menu/menuSpecialtyDrinks/MenuSpecialtyDrinks";
 import MenuFoodTable from "../../components/menu/menuFoodTable/MenuFoodTable";
 
@@ -32,13 +32,11 @@ const Menu = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-zinc-400 text-opacity-20 font-bold menu-header">
-        Menu
-      </h1>
+      <h1 className="text-zinc-400 text-opacity-20 font-bold text-7xl">Menu</h1>
 
-      <div className="menu-table-wrapper">
+      <div className="menu-table-wrapper w-full">
         {tables.map((table) => (
-          <div className="menu-table-grid-item">
+          <div className="w-full">
             <MenuDrinkTable key={table.id} tableInfo={table} />
           </div>
         ))}

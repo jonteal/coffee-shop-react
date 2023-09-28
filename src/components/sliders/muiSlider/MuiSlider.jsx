@@ -22,7 +22,7 @@ export const MuiSlider = (props) => {
 
   return (
     <Carousel
-      className="h-screen w-full"
+      className="w-full md:h-screen"
       animation="slide"
       duration={1500}
       interval={4000}

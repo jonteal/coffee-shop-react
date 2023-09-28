@@ -4,20 +4,16 @@ import { FaArrowRight } from "react-icons/fa";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
 
 // COMPONENTS
-import Slider from "../../components/sliders/slider/Slider";
-import TextSlider from "../../components/sliders/textSlider/TextSlider";
 import HomeContactForm from "../../components/home/homeContactForm/HomeContactForm";
 import HomeImageGrid from "../../components/home/homeImageGrid/HomeImageGrid";
-import { HomeImageSlider } from "../../components/sliders/homeImageSlider/HomeImageSlider";
-import HomeInfo from "../../components/home/homeInfo/HomeInfo";
+import { HomeInfo } from "../../components/home/homeInfo/HomeInfo";
 import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
-import MenuDrinkTable from "../../components/menu/menuDrinkTable/MenuDrinkTable";
-import { BootstrapSlider } from "../../components/sliders/bootstrapSlider/BootstrapSlider";
-
-import "./home.css";
+import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 import { MuiSlider } from "../../components/sliders/muiSlider/MuiSlider";
 import { MuiTextSlider } from "../../components/sliders/muiTextSlider/MuiTextSlider";
 import ScrollToTop from "react-scroll-to-top";
+
+import "./home.css";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
@@ -45,15 +41,15 @@ const Home = () => {
 
   return (
     <div>
-      <div className="w-full mx-auto">
+      <div className="w-full mx-0">
         <MuiSlider />
       </div>
 
       <div className="flex justify-center mt-5">
-        <img src={CoffeeIcon} alt="" className="w-1/12" />
+        <img src={CoffeeIcon} alt="Coffee shop logo" className="w-1/12" />
       </div>
       <div className="flex flex-col justify-center">
-        <h1 className="text-slate-500 text-opacity-80 home-about-subtitle-header font-serif my-2">
+        <h1 className="text-slate-500 text-opacity-80 text-2xl font-serif my-2">
           About Hillside
         </h1>
         <hr className="home-about-line-break" />
@@ -74,7 +70,10 @@ const Home = () => {
           </div>
 
           {tables.map((table) => (
-            <div key={table.id} className="flex justify-center w-9/12 mt-5">
+            <div
+              key={table.id}
+              className="flex justify-center w-full md:w-9/12 mt-5"
+            >
               <MenuDrinkTable tableInfo={table} />
             </div>
           ))}

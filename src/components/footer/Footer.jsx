@@ -10,7 +10,7 @@ export const Footer = () => {
         <FaInstagram className="px-1 text-4xl ml-1 mr-3" />
       </a>
 
-      <p className="mr-3 text-xs font-thin">
+      <p className="text-xs font-thin">
         © 2023 HILLSIDE CAFE. ALL RIGHTS RESERVED. WEB DESIGN BY JON JACKSON.
       </p>
     </div>

@@ -6,6 +6,11 @@
       "sizes": ["", "S", "M", "L"],
       "items": [
         {
+          "id": 0,
+          "itemName": "",
+          "prices": ["S", "M", "L"]
+        },
+        {
           "id": 1,
           "itemName": "Drip",
           "prices": ["3", "4", "5"]
@@ -47,6 +52,11 @@
       "category": "Tea",
       "sizes": ["", "S", "M", "L"],
       "items": [
+        {
+          "id": 0,
+          "itemName": "",
+          "prices": ["S", "M", "L"]
+        },
         {
           "id": 1,
           "itemName": "Honey Chai",

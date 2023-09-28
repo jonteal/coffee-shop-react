@@ -1,21 +1,6 @@
-.menu-header {
-    font-size: 16rem;
-}
-
-.menu-drink-table,
-.speciality-table {
-    width: 100%;
-}
-
 .menu-table-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    width: 100%;
   }
   
-.menu-table-grid-item {
-    width: 100%;
-}
-
-

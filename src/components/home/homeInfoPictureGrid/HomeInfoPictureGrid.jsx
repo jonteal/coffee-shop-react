@@ -8,7 +8,7 @@ import "./homeInfoPictureGrid.css";
 const HomeInfoPictureGrid = () => {
   return (
     <div className="wrapper mb-5">
-      <div className="grid-item">
+      <div className="md:grid-item hidden md:block">
         <img src={GridImage1} alt="" />
       </div>
       <div className="grid-item flex flex-col items-center justify-center bg-yellow-700">
@@ -16,7 +16,7 @@ const HomeInfoPictureGrid = () => {
         <p>123 MAIN STREET</p>
         <p>FAYETTEVILLE, AR 72701</p>
       </div>
-      <div className="grid-item">
+      <div className="md:grid-item hidden md:block">
         <img src={GridImage2} alt="" />
       </div>
       <div className="grid-item flex flex-col items-center justify-center bg-yellow-700">
@@ -30,7 +30,7 @@ const HomeInfoPictureGrid = () => {
         <p>YOUR ORDER. WE PREFER AT</p>
         <p>LEAST A 24-48 HOUR HEADS UP!</p>
       </div>
-      <div className="grid-item">
+      <div className="md:grid-item hidden md:block">
         <img src={GridImage3} alt="" />
       </div>
       <div className="grid-item flex flex-col items-center justify-center bg-cyan-700">
@@ -39,7 +39,7 @@ const HomeInfoPictureGrid = () => {
         <p>CURBSITE PICKUP</p>
         <p>NO DELIVERY</p>
       </div>
-      <div className="grid-item">
+      <div className="md:grid-item hidden md:block">
         <img src={GridImage4} alt="" />
       </div>
     </div>

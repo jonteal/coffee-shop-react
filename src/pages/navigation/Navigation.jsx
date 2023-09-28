@@ -13,7 +13,7 @@ const Navigation = () => {
           <NavLink label="ABOUT" location="about" />
           <NavLink label="MENU" location="menu" />
           <Link className="logo-container" to="/">
-            <img src={CoffeeIcon} className="logo w-28" alt="Coffee Logo" />
+            <img src={CoffeeIcon} className="w-20" alt="Coffee Logo" />
           </Link>
           <NavLink label="CATERING" location="catering" />
           <NavLink label="CONTACT" location="contact" />
