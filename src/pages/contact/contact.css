@@ -5,17 +5,17 @@
 /* Flaired edges, by Tomas Theunissen */
 
 .line-break {
-    overflow: visible; /* For IE */
+    overflow: visible;
     height: 30px;
     border-style: solid;
     border-color: rgb(173, 173, 173);
     border-width: 1px 0 0 0;
     border-radius: 20px;
-    width: 35%;
+    width: 100%;
     align-self: center;
-    /* border-color: rgb(161 161 170 / var(--tw-text-opacity)); */
 }
-.line-break:before { /* Not really supposed to work, but does */
+
+.line-break:before {
     display: block;
     content: "";
     height: 30px;
@@ -25,8 +25,6 @@
     border-width: 0 0 1px 0;
     border-radius: 20px;
 }
-
-/* Contact component CSS */
 
 .contact {
     height: 100vh;

@@ -15,7 +15,7 @@ const Locations = () => {
             className="catering-main-image h-screen object-cover"
           />
           <div className="location-text-container">
-            <h1 className="text-zinc-200 text-opacity-60 font-bold locations-header font-serif">
+            <h1 className="text-zinc-200 text-opacity-60 font-bold text-7xl md:locations-header font-serif">
               Locations
             </h1>
           </div>
@@ -37,7 +37,7 @@ const Locations = () => {
         <p className="text-lg capitalize block font-semibold">800-500-0000</p>
 
         <img
-          className="w-72 h-auto my-5"
+          className="w-full md:w-72 h-auto my-5"
           src={LocationImage}
           alt="Coffees in a circle"
         />

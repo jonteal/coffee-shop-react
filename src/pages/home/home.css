@@ -1,7 +1,3 @@
-/* .slider-container {
-    width: 100%;
-} */
-
 .slider-container,
 .home-image-grid-container {
     width: 100%;
@@ -38,7 +34,7 @@
   }
 
 .home-about-line-break {
-  overflow: visible; /* For IE */
+  overflow: visible;
   height: 30px;
   border-style: solid;
   border-color: rgb(173, 173, 173);
@@ -46,9 +42,9 @@
   border-radius: 20px;
   width: 50%;
   align-self: center;
-  /* border-color: rgb(161 161 170 / var(--tw-text-opacity)); */
 }
-.home-about-line-break:before { /* Not really supposed to work, but does */
+
+.home-about-line-break:before { 
   display: block;
   content: "";
   height: 30px;
@@ -57,12 +53,4 @@
   border-color: rgb(173, 173, 173);    
   border-width: 0 0 1px 0;
   border-radius: 20px;
-}
-
-.home-info-picture-grid-container {
-  width: 100%;
-}
-
-.home-contact-header-banner {
-  width: 100%;
 }

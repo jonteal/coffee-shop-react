@@ -87,7 +87,7 @@ const Home = () => {
             </div>
           </Link>
 
-          <div className="home-info-picture-grid-container">
+          <div className="w-full">
             <HomeInfoPictureGrid />
           </div>
 
@@ -95,7 +95,7 @@ const Home = () => {
             <MuiTextSlider reviews={reviews} />
           </div>
 
-          <div className="home-contact-header-banner bg-cyan-700 my-5 p-5">
+          <div className="w-full bg-cyan-700 my-5 p-5">
             <h3 className="text-5xl text-gray-100 font-serif italic">
               Get in touch!
             </h3>

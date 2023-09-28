@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
-        <h1 className="text-zinc-900 text-opacity-50 font-bold contact-header font-serif">
+        <h1 className="text-zinc-900 text-opacity-50 font-bold text-5xl md:text-6xl font-serif mb-3">
           Get in touch
         </h1>
         <hr className="line-break" />
