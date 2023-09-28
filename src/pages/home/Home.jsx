@@ -7,7 +7,7 @@ import CoffeeIcon from "../../assets/coffee-logo.jpg";
 import HomeContactForm from "../../components/home/homeContactForm/HomeContactForm";
 import HomeImageGrid from "../../components/home/homeImageGrid/HomeImageGrid";
 import { HomeInfo } from "../../components/home/homeInfo/HomeInfo";
-import HomeInfoPictureGrid from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
+import { HomeInfoPictureGrid } from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
 import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 import { MuiSlider } from "../../components/sliders/muiSlider/MuiSlider";
 import { MuiTextSlider } from "../../components/sliders/muiTextSlider/MuiTextSlider";
@@ -91,7 +91,7 @@ const Home = () => {
             <HomeInfoPictureGrid />
           </div>
 
-          <div className="my-3 p-5 w-7/12">
+          <div className="my-3 p-5 w-full md:w-7/12">
             <MuiTextSlider reviews={reviews} />
           </div>
 

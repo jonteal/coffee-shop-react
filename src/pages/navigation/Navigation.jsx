@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="h-20 w-full flex justify-between mb-6">
-        <div className="flex flex-row justify-center items-center mx-auto mb-3 mt-12">
+        <div className="flex flex-row justify-center items-center mx-0 mb-3 mt-12">
           <NavLink label="HOME" location="/" />
           <NavLink label="ABOUT" location="about" />
           <NavLink label="MENU" location="menu" />

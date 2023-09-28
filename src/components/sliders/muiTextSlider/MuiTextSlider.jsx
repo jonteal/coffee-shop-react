@@ -37,7 +37,7 @@ export const MuiTextSlider = () => {
 
 const Item = (props) => {
   return (
-    <div className="h-20 flex flex-col justify-start">
+    <div className="h-32 flex flex-col justify-start mb-10 md:mb-0">
       <p className="text-lg italic font-serif tracking-wide">
         "{props.item.description}"
       </p>
