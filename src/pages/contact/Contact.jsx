@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 
 import "./contact.css";
 
-const Contact = () => {
+export const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
@@ -97,5 +97,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

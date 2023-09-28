@@ -15,7 +15,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 import "./home.css";
 
-const Home = () => {
+export const Home = () => {
   const [tables, setTables] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [homeInfo, setHomeInfo] = useState([]);
@@ -108,5 +108,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

@@ -1,8 +1,4 @@
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 100%;
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -35,29 +31,17 @@
     100% { opacity: 1; }
   }
 
-.catering-title-header {
-    font-size: 5rem;
-}
-
 .catering-text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.catering-subtitle-header {
-    font-size: 3rem;
-}
-
 .catering-main-image {
-    width: 100%;
     filter: brightness(50%)
 }
 
 .secondary-section-container,
 .secondary-image-container {
-  height: 450px;
+  /* height: 450px; */
   overflow: hidden;
 }
 
@@ -75,8 +59,7 @@
 
 .catering-second-text-container {
   z-index: 1;
-  position: absolute;
-  top: 185%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  /* top: 185%; */
+  /* left: 70%; */
+  /* transform: translate(-50%, -50%); */
 }

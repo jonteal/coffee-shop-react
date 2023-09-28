@@ -1,4 +1,4 @@
-import MenuFoodItem from "../menuFoodItem/MenuFoodItem";
+import { MenuFoodItem } from "../menuFoodItem/MenuFoodItem";
 
 export const MenuFoodTable = ({ tableInfo }) => (
   <div className="flex flex-col px-1 md:px-5 my-3 border mx-0 w-full md:w-2/3 h-44">

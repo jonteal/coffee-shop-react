@@ -32,7 +32,7 @@ export const Menu = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-zinc-400 text-opacity-20 font-bold text-8xl">Menu</h1>
+      <h1 className="text-zinc-400 text-opacity-50 font-bold text-8xl">Menu</h1>
 
       <div className="flex flex-col md:menu-table-wrapper w-full">
         {tables.map((table) => (
@@ -42,7 +42,7 @@ export const Menu = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row mb-10">
         {specialtyItems?.map((item) => (
           <MenuSpecialtyDrinks key={item.id} tableInfo={item} />
         ))}

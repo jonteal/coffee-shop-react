@@ -1,29 +1,30 @@
 import MainImage from "../../assets/images/catering.jpg";
 import SecondaryImage from "../../assets/images/catering2.jpg";
+
 import "./catering.css";
 
-const Catering = () => {
+export const Catering = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="container">
+      <div className="container relative text-center w-full px-0">
         <img
           src={MainImage}
           alt="Coffee shop"
-          className="catering-main-image"
-        ></img>
-        <div className="catering-text-container">
-          <h1 className="text-slate-50 text-opacity-80 font-bold catering-title-header font-serif">
+          className="catering-main-image w-full"
+        />
+        <div className="catering-text-container absolute top-1/2 left-1/2">
+          <h1 className="text-slate-50 text-opacity-80 font-bold text-7xl font-serif">
             Hillside
           </h1>
-          <h2 className="text-slate-50 text-opacity-80 font-bold catering-subtitle-header font-serif">
+          <h2 className="text-slate-50 text-opacity-80 font-bold text-4xl font-serif">
             Catering Menu
           </h2>
         </div>
       </div>
 
-      <div className="flex flex-row mt-5 mb-10 ml-20 secondary-section-container">
-        <div className="bg-gray-800 w-5/12 flex flex-col justify-center mr-3">
-          <p className="text-slate-50 mx-5 my-2 text-xl">
+      <div className="flex flex-col md:flex-row mb-10 mx-0 md:ml-20 secondary-section-container">
+        <div className="bg-gray-800 w-full md:w-5/12 flex flex-col justify-center py-4">
+          <p className="text-slate-50 mx-5 text-xl">
             Call 479-123-4567 or visit our contact page to place your order.
           </p>
 
@@ -35,24 +36,15 @@ const Catering = () => {
             future catering needs!
           </p>
         </div>
-        <div className="w-7/12 secondary-image-container">
-          <img
-            className="catering-secondary-image"
-            src={SecondaryImage}
-            alt="Catering Image"
-          />
-          <div className="catering-second-text-container">
-            <h2 className="text-slate-50 text-opacity-90 bg-gray-800 px-3 py-2 text-5xl font-bold catering-second-title-header font-serif">
-              Call us today!
-            </h2>
-            <h3 className="text-slate-50 text-opacity-90 text-2xl bg-gray-800 py-2 catering-second-subtitle-header">
-              For your future catering needs!
-            </h3>
+
+        <div class="relative">
+          <img src={SecondaryImage} className="catering-secondary-image" />
+          <div class="bg-gray-800 absolute font-bold font-serif py-3 px-10 text-slate-50 text-opacity-90 w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h2 className="text-5xl">Call us today!</h2>
+            <h3 className="text-2xl">For your future catering needs!</h3>
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default Catering;

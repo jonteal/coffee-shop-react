@@ -1,10 +1,9 @@
 import MainImage from "../../assets/images/gridImage3.jpg";
 import LocationImage from "../../assets/images/stock5.jpg";
-import { HiOutlinePhone } from "react-icons/hi";
 
 import "./locations.css";
 
-const Locations = () => {
+export const Locations = () => {
   return (
     <>
       <div className="h-screen">
@@ -45,5 +44,3 @@ const Locations = () => {
     </>
   );
 };
-
-export default Locations;

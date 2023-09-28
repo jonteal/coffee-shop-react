@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
 import NavLink from "../../components/navLink/NavLink";
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <Fragment>
       <div className="h-20 w-full flex justify-between mb-6">
@@ -25,5 +25,3 @@ const Navigation = () => {
     </Fragment>
   );
 };
-
-export default Navigation;
