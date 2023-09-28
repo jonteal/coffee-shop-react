@@ -1,15 +1,13 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
-import "./footer.css";
-
-const Footer = () => {
+export const Footer = () => {
   return (
-    <div className="footer bg-cyan-700 py-2 flex flex-row justify-center items-center">
+    <div className="footer bg-cyan-700 py-2 flex flex-row justify-center items-center fixed bottom-0 left-0 w-full text-slate-50 text-center z-10">
       <a href="">
-        <FaFacebook className="px-1 social-icon ml-3 mr-1" />
+        <FaFacebook className="px-1 text-4xl ml-3 mr-1" />
       </a>
       <a href="">
-        <FaInstagram className="px-1 social-icon ml-1 mr-3" />
+        <FaInstagram className="px-1 text-4xl ml-1 mr-3" />
       </a>
 
       <p className="mr-3 text-xs font-thin">
@@ -18,5 +16,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

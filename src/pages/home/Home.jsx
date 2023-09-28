@@ -17,6 +17,7 @@ import { BootstrapSlider } from "../../components/sliders/bootstrapSlider/Bootst
 import "./home.css";
 import { MuiSlider } from "../../components/sliders/muiSlider/MuiSlider";
 import { MuiTextSlider } from "../../components/sliders/muiTextSlider/MuiTextSlider";
+import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
   const [tables, setTables] = useState([]);
@@ -44,11 +45,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* <div className="slider-container">
-        <Slider />
-      </div> */}
-      <div className="slider-container">
-        {/* <BootstrapSlider /> */}
+      <div className="w-full mx-auto">
         <MuiSlider />
       </div>
 
@@ -108,6 +105,7 @@ const Home = () => {
           <HomeContactForm />
         </div>
       </div>
+      <ScrollToTop className="mb-10" smooth />
     </div>
   );
 };

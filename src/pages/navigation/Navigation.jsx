@@ -2,38 +2,22 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
-
-import "./navigation.css";
+import NavLink from "../../components/navLink/NavLink";
 
 const Navigation = () => {
   return (
     <Fragment>
-      <div className="navigation-container">
+      <div className="h-20 w-full flex justify-between mb-6">
         <div className="flex flex-row justify-center items-center mx-auto mb-3 mt-12">
-          <Link className="nav-link" to="/">
-            HOME
-          </Link>
-          <Link className="nav-link" to="about">
-            ABOUT
-          </Link>
-          <Link className="nav-link" to="menu">
-            MENU
-          </Link>
+          <NavLink label="HOME" location="/" />
+          <NavLink label="ABOUT" location="about" />
+          <NavLink label="MENU" location="menu" />
           <Link className="logo-container" to="/">
             <img src={CoffeeIcon} className="logo w-28" alt="Coffee Logo" />
           </Link>
-          <Link className="nav-link" to="catering">
-            CATERING
-          </Link>
-          <Link className="nav-link" to="contact">
-            CONTACT
-          </Link>
-          <Link className="nav-link" to="locations">
-            LOCATIONS
-          </Link>
-          {/* <Link className="nav-link nav-book-button" to="rentals">
-            BOOK WITH US
-          </Link> */}
+          <NavLink label="CATERING" location="catering" />
+          <NavLink label="CONTACT" location="contact" />
+          <NavLink label="LOCATIONS" location="locations" />
         </div>
       </div>
 
