@@ -31,26 +31,26 @@ export const Contact = () => {
       );
   };
   return (
-    <div>
+    <>
       <div className="flex flex-col items-center">
         <h1 className="text-zinc-900 text-opacity-50 font-bold text-5xl md:text-6xl font-serif mb-3">
           Get in touch
         </h1>
-        <hr className="line-break" />
       </div>
+      <hr className="line-break w-10/12 mx-auto self-center" />
       <div className="contact" id="contact-me-section">
         <div className="contact-bg"></div>
         <div className="contact-wrapper">
           <div className="contact-left">
-            <h1 className="italic text-5xl font-serif">
+            <h2 className="italic text-4xl font-serif self-center text-center mb-5">
               We'd love to hear from you!
-            </h1>
+            </h2>
 
             {/* Contact information */}
             <div className="contact-info">
               <div className="contact-info-item flex flex-row items-center">
                 <FaPhoneAlt className="mr-2" />
-                +1 (800) 555-5555
+                <a href="8005555555">+1 (800) 555-5555</a>
               </div>
               <div className="contact-info-item flex flex-row items-center">
                 <FaMailBulk className="mr-2" />
@@ -94,6 +94,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

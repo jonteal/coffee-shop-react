@@ -23,7 +23,7 @@ export const Catering = () => {
       </div>
 
       <div className="flex flex-col md:flex-row mb-10 mx-0 md:ml-20 secondary-section-container">
-        <div className="bg-gray-800 w-full md:w-5/12 flex flex-col justify-center py-4">
+        <div className="bg-gray-800 opacity-90 w-full md:w-5/12 flex flex-col justify-center py-4">
           <p className="text-slate-50 mx-5 text-xl">
             Call 479-123-4567 or visit our contact page to place your order.
           </p>
@@ -39,9 +39,11 @@ export const Catering = () => {
 
         <div class="relative">
           <img src={SecondaryImage} className="catering-secondary-image" />
-          <div class="bg-gray-800 absolute font-bold font-serif py-3 px-10 text-slate-50 text-opacity-90 w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h2 className="text-5xl">Call us today!</h2>
-            <h3 className="text-2xl">For your future catering needs!</h3>
+          <div class="bg-gray-800 opacity-90 absolute font-serif py-3 px-10 text-slate-50 text-opacity-90 w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h2 className="text-5xl font-bold">Call us today!</h2>
+            <h3 className="text-2xl font-semibold">
+              For your future catering needs!
+            </h3>
           </div>
         </div>
       </div>
