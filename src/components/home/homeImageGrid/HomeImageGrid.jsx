@@ -9,7 +9,7 @@ import Image8 from "../../../assets/images/homeGrid/image8.jpg";
 
 import "./homeImageGrid.css";
 
-const HomeImageGrid = () => {
+export const HomeImageGrid = () => {
   return (
     <div className="image-grid-container">
       <div className="row">
@@ -31,5 +31,3 @@ const HomeImageGrid = () => {
     </div>
   );
 };
-
-export default HomeImageGrid;

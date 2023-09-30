@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
 
 // COMPONENTS
-import HomeContactForm from "../../components/home/homeContactForm/HomeContactForm";
-import HomeImageGrid from "../../components/home/homeImageGrid/HomeImageGrid";
+import { HomeContactForm } from "../../components/home/homeContactForm/HomeContactForm";
+import { HomeImageGrid } from "../../components/home/homeImageGrid/HomeImageGrid";
 import { HomeInfo } from "../../components/home/homeInfo/HomeInfo";
 import { HomeInfoPictureGrid } from "../../components/home/homeInfoPictureGrid/HomeInfoPictureGrid";
 import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTable";
@@ -87,9 +87,9 @@ export const Home = () => {
             </div>
           </Link>
 
-          {/* <div className="w-full"> */}
-          <HomeInfoPictureGrid />
-          {/* </div> */}
+          <div className="hidden md:w-full md:block">
+            <HomeInfoPictureGrid />
+          </div>
 
           <div className="my-3 p-5 w-full md:w-7/12">
             <MuiTextSlider reviews={reviews} />

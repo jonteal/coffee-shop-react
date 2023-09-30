@@ -40,7 +40,7 @@ export const Contact = () => {
       <hr className="line-break w-10/12 mx-auto self-center" />
       <div className="contact" id="contact-me-section">
         <div className="contact-bg"></div>
-        <div className="contact-wrapper">
+        <div className="contact-wrapper flex flex-col md:flex-row items-start">
           <div className="contact-left">
             <h2 className="italic text-4xl font-serif self-center text-center mb-5">
               We'd love to hear from you!
@@ -60,6 +60,15 @@ export const Contact = () => {
                 <FaMapMarkerAlt className="mr-2" />
                 Fayetteville, AR
               </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.9495051927313!2d-94.1598065413548!3d36.06214556452451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96ed7bf718135%3A0xea56ad1d4c2d9656!2sSquare%20Gardens!5e0!3m2!1sen!2sus!4v1696105363572!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                className="w-1/2 h-full border mb-72"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div className="contact-right">
@@ -88,7 +97,9 @@ export const Contact = () => {
                 placeholder="Message"
                 name="message"
               />
-              <button className="button px-5 py-2 mt-2">Send</button>
+              <button className="button px-5 py-2 mt-2 hover:bg-cyan-600">
+                Send
+              </button>
               {done && "Thank you for your message!"}
             </form>
           </div>

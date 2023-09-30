@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 
 import "./homeContactForm.css";
 
-const Contact = () => {
+export const HomeContactForm = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
@@ -31,7 +31,7 @@ const Contact = () => {
       );
   };
   return (
-    <div>
+    <div className="mb-10">
       <div className="contact" id="contact-me-section">
         <div className="contact-bg"></div>
         <div className="contact-wrapper">
@@ -53,6 +53,15 @@ const Contact = () => {
                 Fayetteville, AR
               </div>
             </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.9495051927313!2d-94.1598065413548!3d36.06214556452451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96ed7bf718135%3A0xea56ad1d4c2d9656!2sSquare%20Gardens!5e0!3m2!1sen!2sus!4v1696105363572!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              className="w-3/4 h-2/4 border mb-72"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <div className="contact-right">
             {/* Form to reach out via email */}
@@ -80,7 +89,9 @@ const Contact = () => {
                 placeholder="Message"
                 name="message"
               />
-              <button className="button px-5 py-2 mt-2">Send</button>
+              <button className="button px-5 py-2 mt-2 hover:bg-cyan-600">
+                Send
+              </button>
               {done && "Thank you for your message!"}
             </form>
           </div>
@@ -89,5 +100,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

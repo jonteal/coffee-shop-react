@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 
 // import "./menuDrawer.css";
 
-const MenuDrawer = ({ name, ...props }) => {
+export const MenuDrawer = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -69,5 +69,3 @@ const MenuDrawer = ({ name, ...props }) => {
     </>
   );
 };
-
-export default MenuDrawer;

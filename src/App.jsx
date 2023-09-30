@@ -12,7 +12,7 @@ import { Navigation } from "./pages/navigation/Navigation";
 
 import "./App.css";
 
-function App() {
+export const App = () => {
   return (
     <>
       <Header />
@@ -32,6 +32,4 @@ function App() {
       <Footer />
     </>
   );
-}
-
-export default App;
+};
