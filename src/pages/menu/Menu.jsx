@@ -4,8 +4,6 @@ import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTa
 import { MenuSpecialtyDrinks } from "../../components/menu/menuSpecialtyDrinks/MenuSpecialtyDrinks";
 import { MenuFoodTable } from "../../components/menu/menuFoodTable/MenuFoodTable";
 
-import "./menu.css";
-
 export const Menu = () => {
   const [tables, setTables] = useState([]);
   const [specialtyItems, setSpecialtyItems] = useState([]);
@@ -34,9 +32,12 @@ export const Menu = () => {
     <div className="flex flex-col">
       <h1 className="text-zinc-400 text-opacity-50 font-bold text-8xl">Menu</h1>
 
-      <div className="flex flex-col md:menu-table-wrapper w-full">
+      <div className="flex flex-col md:flex-row md:mx-auto w-full mt-4">
         {tables.map((table) => (
-          <div key={table.id} className="w-full">
+          <div
+            key={table.id}
+            className="w-full border flex flex-row justify-center mx-2"
+          >
             <MenuDrinkTable key={table.id} tableInfo={table} />
           </div>
         ))}

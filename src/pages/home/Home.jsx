@@ -72,7 +72,7 @@ export const Home = () => {
           {tables.map((table) => (
             <div
               key={table.id}
-              className="flex justify-center w-full md:w-9/12 mt-5"
+              className="flex justify-center w-full md:w-1/2 mt-5"
             >
               <MenuDrinkTable tableInfo={table} />
             </div>
@@ -87,9 +87,9 @@ export const Home = () => {
             </div>
           </Link>
 
-          <div className="w-full">
-            <HomeInfoPictureGrid />
-          </div>
+          {/* <div className="w-full"> */}
+          <HomeInfoPictureGrid />
+          {/* </div> */}
 
           <div className="my-3 p-5 w-full md:w-7/12">
             <MuiTextSlider reviews={reviews} />

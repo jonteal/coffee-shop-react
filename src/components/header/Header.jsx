@@ -11,7 +11,7 @@ export const Header = () => {
           <FaInstagram className="px-1 text-3xl mr-3" />
         </a>
       </div>
-      <p className="text-sm">MON–SAT 7:30AM–3PM · SUNDAY 9AM–4PM</p>
+      <p className="text-sm md:mr-10">MON–SAT 7:30AM–3PM · SUNDAY 9AM–4PM</p>
     </div>
   );
 };

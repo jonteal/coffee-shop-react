@@ -7,39 +7,39 @@ import "./homeInfoPictureGrid.css";
 
 export const HomeInfoPictureGrid = () => {
   return (
-    <div className="md:wrapper mb-5 flex flex-col">
-      <div className="md:grid-item hidden md:block">
+    <div className="wrapper mb-5">
+      <div className="grid-item">
         <img src={GridImage1} alt="" />
       </div>
-      <div className="md:grid-item flex flex-col items-center justify-center bg-yellow-700 py-3 md:py-0">
+      <div className="grid-item flex flex-col items-center justify-center bg-yellow-700 py-0">
         <h2 className="font-serif text-3xl mb-1">Location</h2>
         <p>123 MAIN STREET</p>
         <p>FAYETTEVILLE, AR 72701</p>
       </div>
-      <div className="md:grid-item hidden md:block">
+      <div className="grid-item">
         <img src={GridImage2} alt="" />
       </div>
-      <div className="md:grid-item flex flex-col items-center justify-center bg-yellow-700 py-3 md:py-0">
+      <div className="grid-item flex flex-col items-center justify-center bg-yellow-700 py-0">
         <h2 className="font-serif text-3xl mb-1">Hours</h2>
         <p>MON–SAT 7:30AM–3PM</p>
         <p>SUNDAY 9AM–4PM</p>
       </div>
-      <div className="md:grid-item flex flex-col items-center justify-center bg-cyan-700 py-3 md:py-0">
+      <div className="grid-item flex flex-col items-center justify-center bg-cyan-700 py-0">
         <h2 className="font-serif text-3xl mb-1">Catering</h2>
         <p>CALL 479-123-4567 TO PLACE</p>
         <p>YOUR ORDER. WE PREFER AT</p>
         <p>LEAST A 24-48 HOUR HEADS UP!</p>
       </div>
-      <div className="md:grid-item hidden md:block">
+      <div className="grid-item">
         <img src={GridImage3} alt="" />
       </div>
-      <div className="md:grid-item flex flex-col items-center justify-center bg-cyan-700 py-3 md:py-0">
+      <div className="grid-item flex flex-col items-center justify-center bg-cyan-700 py-0">
         <h2 className="font-serif text-3xl mb-1">Service Options</h2>
         <p>DINE-IN</p>
         <p>CURBSITE PICKUP</p>
         <p>NO DELIVERY</p>
       </div>
-      <div className="md:grid-item hidden md:block">
+      <div className="grid-item">
         <img src={GridImage4} alt="" />
       </div>
     </div>

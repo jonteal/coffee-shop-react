@@ -6,12 +6,12 @@ import "./locations.css";
 export const Locations = () => {
   return (
     <>
-      <div className="h-screen">
-        <div className="locations-main-container h-screen">
+      <div className="h-screen w-full">
+        <div className="locations-main-container w-full text-slate-50 text-center relative h-screen">
           <img
             src={MainImage}
             alt="Coffee shop"
-            className="catering-main-image h-screen object-cover"
+            className="catering-main-image w-full h-screen object-cover"
           />
           <div className="location-text-container">
             <h1 className="text-zinc-200 text-opacity-60 font-bold text-7xl md:locations-header font-serif">
