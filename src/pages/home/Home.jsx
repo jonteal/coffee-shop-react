@@ -41,7 +41,7 @@ export const Home = () => {
 
   return (
     <div>
-      <div className="w-full mx-0">
+      <div className="w-full mx-0 mt-20 md:mt-0">
         <MuiSlider />
       </div>
 
