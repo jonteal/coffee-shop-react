@@ -29,7 +29,7 @@ export const Menu = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-5">
       <h1 className="text-zinc-400 text-opacity-50 font-bold text-8xl">Menu</h1>
 
       <div className="flex flex-col md:flex-row md:mx-auto w-full mt-4">

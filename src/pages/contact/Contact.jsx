@@ -32,7 +32,7 @@ export const Contact = () => {
   };
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-20">
         <h1 className="text-zinc-900 text-opacity-50 font-bold text-5xl md:text-6xl font-serif mb-3">
           Get in touch
         </h1>

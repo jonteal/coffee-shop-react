@@ -6,7 +6,7 @@ import "./locations.css";
 export const Locations = () => {
   return (
     <>
-      <div className="h-screen w-full">
+      <div className="h-screen w-full mt-20">
         <div className="locations-main-container w-full text-slate-50 text-center relative h-screen">
           <img
             src={MainImage}

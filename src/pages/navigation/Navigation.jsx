@@ -38,7 +38,7 @@ export const Navigation = () => {
           {isOpen && (
             <div
               className={`bg-cyan-700 opacity-90 flex flex-col ${
-                handleOpenDrawer ? "fade-in-menu" : "fade-out-menu"
+                isOpen ? "fade-in-menu" : "fade-out-menu"
               }`}
             >
               <NavLink label="HOME" location="/" />

@@ -5,7 +5,7 @@ import "./catering.css";
 
 export const Catering = () => {
   return (
-    <div className="flex flex-col items-center w-full mx-0 px-0">
+    <div className="flex flex-col items-center w-full mx-0 px-0 mt-20">
       <div className="container relative text-center w-full px-0">
         <img
           src={MainImage}
