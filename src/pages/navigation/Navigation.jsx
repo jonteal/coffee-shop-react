@@ -2,34 +2,45 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import CoffeeIcon from "../../assets/coffee-logo.jpg";
 import { NavLink } from "../../components/navLink/NavLink";
-import { MenuDrawer } from "../../components/menuDrawer/MenuDrawer";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TfiClose } from "react-icons/tfi";
+
+import "./navigation.css";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenDrawer = () => {
     setIsOpen(!isOpen);
-    console.log("isOpen: ", isOpen);
   };
+
   return (
     <>
-      <div className="md:h-20 md:w-full md:flex md:justify-between md:mb-6">
+      <div className="md:h-20 md:w-full md:flex md:justify-between md:mb-6 flex flex-row justify-end">
         <div
           onClick={handleOpenDrawer}
-          className="flex flex-col md:hidden mt-10 text-slate-800 absolute z-10"
+          className="flex flex-col md:hidden mt-8 text-slate-800 absolute z-10 w-full"
         >
-          <div className="ml-10">
+          <div className="mr-5 flex flex-row justify-end w-full">
             {isOpen ? (
-              <TfiClose className="text-2xl" />
+              <TfiClose className="text-3xl mr-10" />
             ) : (
-              <RxHamburgerMenu className="text-2xl" />
+              <RxHamburgerMenu className="text-3xl mr-10" />
             )}
           </div>
+        </div>
+        <div
+          className={`${
+            isOpen ? "expandable" : ""
+          } absolute z-10 w-full mt-20 fade-in-menu`}
+        >
           {isOpen && (
-            <div className="bg-cyan-700 opacity-90 flex flex-col">
+            <div
+              className={`bg-cyan-700 opacity-90 flex flex-col ${
+                handleOpenDrawer ? "fade-in-menu" : "fade-out-menu"
+              }`}
+            >
               <NavLink label="HOME" location="/" />
               <NavLink label="ABOUT" location="about" />
               <NavLink label="MENU" location="menu" />
