@@ -65,9 +65,9 @@ export const Contact = () => {
                 width="600"
                 height="450"
                 className="w-1/2 h-full border mb-72"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>

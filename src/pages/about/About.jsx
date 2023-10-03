@@ -1,11 +1,16 @@
 import MeImg from "../../assets/images/me.jpg";
 import Stock2 from "../../assets/images/Stock2.jpg";
 
+import "./about.css";
+
 export const About = () => (
   <div className="flex flex-col mt-5">
     <div className="flex flex-col md:flex-row items-center md:justify-center">
       <div className="w-5/6 md:w-1/2 h-auto mt-10 mb-0 ml-10 mr-5 flex flex-row justify-center">
-        <img src={MeImg} className="md:w-2/3 rounded-xl shadow-xl" />
+        <img
+          src={MeImg}
+          className="md:w-2/3 rounded-xl shadow-xl about-image-1"
+        />
       </div>
       <div className="w-5/6 md:w-1/2 mx-5 my-10">
         <h1 className="text-6xl text-slate-400 font-serif">I'm Jon Jackson</h1>
@@ -59,7 +64,7 @@ export const About = () => (
         </p>
       </div>
       <div className="w-5/6 md:w-1/2 my-10 mx-5">
-        <img src={Stock2} className="rounded-xl" />
+        <img src={Stock2} className="rounded-xl about-image-2" />
       </div>
     </div>
   </div>
