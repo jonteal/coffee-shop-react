@@ -24,8 +24,8 @@ export const Locations = () => {
         <h2 className="text-4xl block font-semibold tracking-wider mt-10">
           Fayetteville
         </h2>
-        <div class="flex flex-1 flex-row justify-center">
-          <div class="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
+        <div className="flex flex-1 flex-row justify-center">
+          <div className="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
         </div>
         <p className="text-lg capitalize block font-semibold">
           123 DICKSON STREET

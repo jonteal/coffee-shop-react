@@ -37,9 +37,9 @@ export const Catering = () => {
           </p>
         </div>
 
-        <div class="relative">
+        <div className="relative">
           <img src={SecondaryImage} className="catering-secondary-image" />
-          <div class="bg-gray-800 opacity-80 absolute font-serif py-3 px-10 text-slate-50 text-opacity-90 w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="bg-gray-800 opacity-80 absolute font-serif py-3 px-10 text-slate-50 text-opacity-90 w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <h2 className="text-5xl font-bold">Call us today!</h2>
             <h3 className="text-2xl font-semibold">
               For your future catering needs!

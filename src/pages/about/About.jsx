@@ -12,8 +12,8 @@ export const About = () => {
           <h1 className="text-6xl text-slate-400 font-serif">
             I'm Jon Jackson
           </h1>
-          <div class="flex flex-1 flex-row justify-center">
-            <div class="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
+          <div className="flex flex-1 flex-row justify-center">
+            <div className="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
           </div>
           <p className="my-3 text-center font-light text-lg">
             Lorem ipsum dolor sit amet.
@@ -42,8 +42,8 @@ export const About = () => {
           <h1 className="text-6xl text-slate-400 font-serif">
             About Hillside Cafe
           </h1>
-          <div class="flex flex-1 flex-row justify-center">
-            <div class="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
+          <div className="flex flex-1 flex-row justify-center">
+            <div className="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-neutral-400 opacity-100 dark:opacity-50 my-2"></div>
           </div>
           <p className="my-3 font-light text-lg text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias

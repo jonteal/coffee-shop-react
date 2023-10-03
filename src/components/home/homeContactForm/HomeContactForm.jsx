@@ -58,9 +58,9 @@ export const HomeContactForm = () => {
               width="600"
               height="450"
               className="w-3/4 h-2/4 border mb-72"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="contact-right">
