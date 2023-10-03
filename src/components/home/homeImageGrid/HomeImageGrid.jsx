@@ -9,25 +9,23 @@ import Image8 from "../../../assets/images/homeGrid/image8.jpg";
 
 import "./homeImageGrid.css";
 
-export const HomeImageGrid = () => {
-  return (
-    <div className="image-grid-container">
-      <div className="row">
-        <div className="column hidden md:block">
-          <img src={Image1} />
-          <img src={Image2} />
-          <img src={Image3} />
-        </div>
-        <div className="column">
-          <img className="hidden md:block" src={Image4} />
-          <img src={Image5} />
-        </div>
-        <div className="column hidden md:block">
-          <img src={Image6} />
-          <img src={Image7} />
-          <img src={Image8} />
-        </div>
+export const HomeImageGrid = () => (
+  <div className="image-grid-container">
+    <div className="row">
+      <div className="column hidden md:block">
+        <img src={Image1} />
+        <img src={Image2} />
+        <img src={Image3} />
+      </div>
+      <div className="column">
+        <img className="hidden md:block" src={Image4} />
+        <img src={Image5} />
+      </div>
+      <div className="column hidden md:block">
+        <img src={Image6} />
+        <img src={Image7} />
+        <img src={Image8} />
       </div>
     </div>
-  );
-};
+  </div>
+);
