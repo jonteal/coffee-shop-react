@@ -30,11 +30,7 @@ export const Navigation = () => {
             )}
           </div>
         </div>
-        <div
-          className={`${
-            isOpen ? "expandable" : ""
-          } absolute z-10 w-full mt-20 fade-in-menu`}
-        >
+        <div className="absolute z-10 w-full mt-20 fade-in-menu">
           {isOpen && (
             <div
               className={`bg-cyan-700 opacity-90 flex flex-col ${
@@ -42,22 +38,22 @@ export const Navigation = () => {
               } ${!isOpen && "fade-out-menu"} 
               }`}
             >
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="HOME" location="/" />
               </div>
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="ABOUT" location="about" />
               </div>
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="MENU" location="menu" />
               </div>
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="CATERING" location="catering" />
               </div>
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="CONTACT" location="contact" />
               </div>
-              <div className="my-1" onClick={() => setIsOpen(false)}>
+              <div className="my-3" onClick={() => setIsOpen(false)}>
                 <NavLink label="LOCATIONS" location="locations" />
               </div>
             </div>

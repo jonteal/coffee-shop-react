@@ -1,5 +1,5 @@
 import MeImg from "../../assets/images/me.jpg";
-import Stock2 from "../../assets/images/Stock2.jpg";
+import Stock2 from "../../assets/images/stock2.jpg";
 
 import "./about.css";
 
