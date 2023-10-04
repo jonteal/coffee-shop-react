@@ -1,3 +1,4 @@
+import ScrollToTop from "react-scroll-to-top";
 import MeImg from "../../assets/images/me.jpg";
 import Stock2 from "../../assets/images/stock2.jpg";
 
@@ -67,5 +68,6 @@ export const About = () => (
         <img src={Stock2} className="rounded-xl about-image-2" />
       </div>
     </div>
+    <ScrollToTop className="mb-10" smooth />
   </div>
 );

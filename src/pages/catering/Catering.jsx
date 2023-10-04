@@ -1,3 +1,4 @@
+import ScrollToTop from "react-scroll-to-top";
 import MainImage from "../../assets/images/catering.jpg";
 import SecondaryImage from "../../assets/images/catering2.jpg";
 
@@ -46,5 +47,6 @@ export const Catering = () => (
         </div>
       </div>
     </div>
+    <ScrollToTop className="mb-10" smooth />
   </div>
 );

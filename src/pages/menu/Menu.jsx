@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { MenuDrinkTable } from "../../components/menu/menuDrinkTable/MenuDrinkTable";
 import { MenuSpecialtyDrinks } from "../../components/menu/menuSpecialtyDrinks/MenuSpecialtyDrinks";
 import { MenuFoodTable } from "../../components/menu/menuFoodTable/MenuFoodTable";
+import ScrollToTop from "react-scroll-to-top";
 
 export const Menu = () => {
   const [tables, setTables] = useState([]);
@@ -52,6 +53,7 @@ export const Menu = () => {
           <MenuFoodTable key={table.id} tableInfo={table} />
         ))}
       </div>
+      <ScrollToTop className="mb-10" smooth />
     </div>
   );
 };

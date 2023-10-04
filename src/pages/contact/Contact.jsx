@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 // import emailjs from "emailjs-com";
 
 import "./contact.css";
+import ScrollToTop from "react-scroll-to-top";
 
 export const Contact = () => {
   const formRef = useRef();
@@ -104,6 +105,7 @@ export const Contact = () => {
             </form>
           </div>
         </div>
+        <ScrollToTop className="mb-10" smooth />
       </div>
     </>
   );

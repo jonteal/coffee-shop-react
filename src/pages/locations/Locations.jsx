@@ -1,3 +1,4 @@
+import ScrollToTop from "react-scroll-to-top";
 import MainImage from "../../assets/images/gridImage3.jpg";
 import LocationImage from "../../assets/images/stock5.jpg";
 
@@ -40,5 +41,6 @@ export const Locations = () => (
         alt="Coffees in a circle"
       />
     </div>
+    <ScrollToTop className="mb-10" smooth />
   </>
 );
