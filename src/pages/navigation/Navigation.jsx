@@ -10,9 +10,16 @@ import "./navigation.css";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
 
   const handleOpenDrawer = () => {
-    setIsOpen(!isOpen);
+    if (isClosed) {
+      setIsOpen(true);
+      setIsClosed(false);
+    } else if (isOpen) {
+      setIsClosed(true);
+      setIsOpen(false);
+    }
   };
 
   return (
@@ -22,42 +29,45 @@ export const Navigation = () => {
           onClick={handleOpenDrawer}
           className="flex flex-col md:hidden mt-8 text-slate-800 absolute z-10 w-full"
         >
-          <div className="mr-5 flex flex-row justify-end w-full">
+          <div className="mr-5 flex flex-row justify-end w-full fixed">
             {isOpen ? (
-              <TfiClose className="text-3xl mr-10 fade-in-menu" />
+              <div className="border mr-10 p-1 bg-slate-50 rounded-sm shadow-2xl">
+                <TfiClose className="text-3xl fade-in-menu" />
+              </div>
             ) : (
-              <RxHamburgerMenu className="text-3xl mr-10 fade-in-menu" />
+              <div className="border mr-10 p-1 bg-slate-50 rounded-sm">
+                <RxHamburgerMenu className="text-3xl fade-in-menu" />
+              </div>
             )}
           </div>
         </div>
-        <div className="absolute z-10 w-full mt-20 fade-in-menu">
-          {isOpen && (
-            <div
-              className={`bg-cyan-700 opacity-90 flex flex-col ${
-                isOpen && "fade-in-menu"
-              } ${!isOpen && "fade-out-menu"} 
-              }`}
-            >
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="HOME" location="/" />
-              </div>
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="ABOUT" location="about" />
-              </div>
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="MENU" location="menu" />
-              </div>
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="CATERING" location="catering" />
-              </div>
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="CONTACT" location="contact" />
-              </div>
-              <div className="my-3" onClick={() => setIsOpen(false)}>
-                <NavLink label="LOCATIONS" location="locations" />
-              </div>
+        <div
+          className={`absolute z-10 w-full mt-20 ${
+            isOpen ? "fade-in-menu" : "fade-out-menu hidden"
+          } `}
+        >
+          {/* {isOpen && ( */}
+          <div className="bg-cyan-700 fixed w-full opacity-90 flex flex-col">
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="HOME" location="/" />
             </div>
-          )}
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="ABOUT" location="about" />
+            </div>
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="MENU" location="menu" />
+            </div>
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="CATERING" location="catering" />
+            </div>
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="CONTACT" location="contact" />
+            </div>
+            <div className="my-3" onClick={() => setIsOpen(false)}>
+              <NavLink label="LOCATIONS" location="locations" />
+            </div>
+          </div>
+          {/* )} */}
         </div>
 
         <div className="hidden md:flex flex-row justify-center items-center mx-0 mb-3 mt-16 w-full">

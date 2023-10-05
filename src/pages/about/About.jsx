@@ -39,7 +39,7 @@ export const About = () => (
         </p>
       </div>
     </div>
-    <div className="flex flex-col md:mt-20 md:flex-row mb-20">
+    <div className="flex flex-col md:flex-row items-center md:justify-center mb-20 md:mt-20">
       <div className="w-5/6 md:w-1/2 mx-5 my-0">
         <h1 className="text-6xl text-slate-400 font-serif">
           About Hillside Cafe
